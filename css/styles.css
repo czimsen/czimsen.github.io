@@ -11,6 +11,11 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root {
+  --primary-color: #4CAF50; /* Main green */
+  --secondary-color: #2E8B57; /* Forest green */
+  --accent-color: #4682B4; /* Earthy blue */
+  --background-color: #f0f7f4; /* Light, eco-friendly background */
+  --text-color: #2e4d34; /* Dark green text */
   --bs-blue: #1e30f3;
   --bs-indigo: #6610f2;
   --bs-purple: #6f42c1;
@@ -42,8 +47,8 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-primary-rgb: 30, 48, 243;
-  --bs-secondary-rgb: 226, 30, 128;
+  --bs-primary-rgb: #4CAF50; /*30, 48, 243;*/
+  --bs-secondary-rgb: #2E8B57; /*226, 30, 128;*/
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
   --bs-warning-rgb: 255, 193, 7;
