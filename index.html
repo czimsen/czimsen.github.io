@@ -1,34 +1,47 @@
+<!--
+<h1> to <h6>: Headings, with <h1> as the largest and <h6> as the smallest.
+<p>: Paragraphs of text.
+<a>: Links, with an href attribute to specify the URL.
+<img>: Images, with src for the source and alt for a description.
+<div>: Division or section in a page, often used as a container for styling or layout.
+<span>: Inline container for styling or layout within text.
+-->
 <!DOCTYPE html>
+<!--Opens the HTML document and specifies English as the language.The closing tag will be </html> at the end of the document-->
 <html lang="en">
+    <!--Opens the head section which contains metadata and document information. The <head> section of an HTML document is where you
+    include information about your webpage that’s mainly for browsers and search engines rather than for direct display to users. 
+    Think of it as the "behind-the-scenes" section of your page that helps with setup and functionality.-->
     <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Cliff Zimsen</title>
+        <meta charset="utf-8" /> <!--Defines the character encoding as UTF-8 (supports international characters)-->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" /> <!--Controls viewport settings for responsive design. Ensures proper scaling on mobile devices-->
+        <meta name="description" content="" /> <!--SEO metadata for page description . empty in this case-->
+        <meta name="author" content="" /> <!--SEO metadata for page author. empty in this case-->
+        <title>Cliff Zimsen</title> <!-- Sets the page title that appears in browser tab-->
         <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Custom Google font-->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" /> <!-- Defines the favicon (small icon in browser tab). Points to an .ico file in assets folder-->
+        <!-- Custom Google font.-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" /> <!-- Establishes early connections to Google Fonts servers. Improves loading performance. crossorigin attribute enables cross-origin resource sharing-->
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
-        <!-- Bootstrap icons-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" /> <!-- Loads the Plus Jakarta Sans font with various weights-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" /> <!-- Bootstrap icons. Loads Bootstrap icons CSS-->
+        <link href="css/styles.css" rel="stylesheet" /> <!-- Core theme CSS (includes Bootstrap). Links to local CSS file-->
     </head>
-    <body class="d-flex flex-column h-100">
-        <main class="flex-shrink-0">
+    <body class="d-flex flex-column h-100"> <!-- Opens body section with Bootstrap classes for flexbox layout. d-flex: enables flexbox. flex-column: sets vertical direction. h-100: 100% height.-->
+        <main class="flex-shrink-0"> <!-- Main content container with Bootstrap class'. flex-shrink-0 prevents shrinking in flexbox layout -->
             <!-- Navigation-->
-            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
-                <div class="container px-5">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3"> <!-- Navigation bar with Bootstrap classes. navbar: basic nav styling. navbar-expand-lg: expands at large breakpoint.
+            navbar-light: light color scheme. bg-white: white background. py-3: padding top/bottom-->
+                <div class="container px-5">  <!-- Bootstrap container with horizontal padding (px-5) -->
+                    <!-- Mobile menu toggle button. Controls collapse/expand of navigation. Various attributes for accessibility and targeting. -->
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
-                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
-                            <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder"> <!-- Unordered list with Bootstrap classes. navbar-nav: nav styling. ms-auto: margin-left auto (pushes menu right). mb-2: margin bottom.
+                        small: small text. fw-bolder: bold font weight-->
+                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li> <!-- List item with nav-item class. Contains link with nav-link class. href specifies destination page-->
+                            <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li> <!-- List item with nav-item class. Contains link with nav-link class. href specifies destination page-->
+                            <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li> <!-- List item with nav-item class. Contains link with nav-link class. href specifies destination page-->
+                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li> <!-- List item with nav-item class. Contains link with nav-link class. href specifies destination page-->
                         </ul>
                     </div>
                 </div>
@@ -40,9 +53,9 @@
                         <div class="col-xxl-5">
                             <!-- Header text content-->
                             <div class="text-center text-xxl-start">
-                                <div class="badge bg-gradient-primary-to-secondary text-white mb-4"><div class="text-uppercase">Engineer &middot; Development &middot; Renewables</div></div>
+                                <div class="badge bg-gradient-primary-to-secondary text-white mb-4"><div class="text-uppercase">Leader &middot; Innovator &middot; Renewables</div></div>
                                 <div class="fs-3 fw-light text-muted">I can help your business to</div>
-                                <h1 class="display-3 fw-bolder mb-5"><span class="text-gradient d-inline">Get creative and make meaninful change</span></h1>
+                                <h1 class="display-3 fw-bolder mb-5"><span class="text-gradient d-inline">Innovate and make meaninful change</span></h1>
                                 <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
                                     <a class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" href="resume.html">Resume</a>
                                     <a class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder" href="projects.html">Projects</a>
@@ -55,7 +68,7 @@
                                 <div class="profile bg-gradient-primary-to-secondary">
                                     <!-- TIP: For best results, use a photo with a transparent background like the demo example below-->
                                     <!-- Watch a tutorial on how to do this on YouTube (link)-->
-                                    <img class="profile-img" src="assets/AI_head_gen3.png" alt="..." />
+                                    <img class="profile-img" src="assets/HeadshotLEFT.png" alt="..." />
                                     <div class="dots-1">
                                         <!-- SVG Dots-->
                                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 191.6 1215.4" style="enable-background: new 0 0 191.6 1215.4" xml:space="preserve">
