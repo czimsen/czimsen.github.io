@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://czimsen.github.io/sitemap.xml
