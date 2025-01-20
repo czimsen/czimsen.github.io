@@ -27,8 +27,8 @@
                 <span class="text-xl font-bold text-emerald-800">CZ</span>
                 <div class="hidden md:flex space-x-8">
                     <a href="#home" class="text-gray-700 hover:text-emerald-600 transition-colors">Home</a>
-                    <a href="#about" class="text-gray-700 hover:text-emerald-600 transition-colors">About</a>
-                    <a href="#projects" class="text-gray-700 hover:text-emerald-600 transition-colors">Projects</a>
+                    <a href="about.html#about" class="text-gray-700 hover:text-emerald-600 transition-colors">About</a>
+                    <a href="experience.html#experience" class="text-gray-700 hover:text-emerald-600 transition-colors">Industry Experience</a>
                     <a href="#contact" class="text-gray-700 hover:text-emerald-600 transition-colors">Contact</a>
                 </div>
             </div>
@@ -53,40 +53,36 @@
                 </p>
 
                 <!-- Key Areas -->
-                <div class="flex justify-center gap-8 mb-12">
-                    <div class="flex flex-col items-center text-emerald-600">
-                        <i data-lucide="wind" class="w-8 h-8 mb-2"></i>
-                        <span class="text-sm font-medium">Wind Energy</span>
-                    </div>
-                    <div class="flex flex-col items-center text-emerald-600">
-                        <i data-lucide="trash-2" class="w-8 h-8 mb-2"></i>
-                        <span class="text-sm font-medium">Waste to Resource</span>
-                    </div>
-                    <div class="flex flex-col items-center text-emerald-600">
-                        <i data-lucide="battery-charging" class="w-8 h-8 mb-2"></i>
-                        <span class="text-sm font-medium">ESS </span>
-                    </div>
-                    <div class="flex flex-col items-center text-emerald-600">
-                        <i data-lucide="sun" class="w-8 h-8 mb-2"></i>
-                        <span class="text-sm font-medium">Solar Power</span>
-                    </div>
-                </div>
-
-                <!-- Call to Action -->
-                <div class="flex justify-center gap-4 mb-12">
-                    <a href="#contact" class="bg-emerald-600 text-white px-6 py-3 rounded-lg hover:bg-emerald-700 transition-colors">
-                        Contact Me
-                    </a>
-                    <a href="#projects" class="bg-white text-emerald-600 px-6 py-3 rounded-lg border border-emerald-600 hover:bg-emerald-50 transition-colors">
-                        View Projects
-                    </a>
-                </div>
+			<div class="flex justify-center gap-8 mb-12">
+    				<a href="experience.html#wind-energy" class="hover:opacity-80 transition-opacity">
+        				<div class="flex flex-col items-center text-emerald-600">
+            					<i data-lucide="wind" class="w-8 h-8 mb-2 pulsate-wind"></i>
+            					<span class="text-sm font-medium pulsate-wind">Wind Energy</span>
+        				</div>
+    				</a>
+    				<a href="experience.html#waste-resources" class="hover:opacity-80 transition-opacity">
+        				<div class="flex flex-col items-center text-emerald-600">
+            					<i data-lucide="trash-2" class="w-8 h-8 mb-2 pulsate-waste"></i>
+            					<span class="text-sm font-medium pulsate-waste">Waste to Resource</span>
+        				</div>
+    				</a>
+    				<a href="experience.html#ess" class="hover:opacity-80 transition-opacity">
+        				<div class="flex flex-col items-center text-emerald-600">
+            					<i data-lucide="battery-charging" class="w-8 h-8 mb-2 pulsate-ess"></i>
+            					<span class="text-sm font-medium pulsate-ess">ESS</span>
+        				</div>
+    				</a>
+    
+    				<a href="experience.html#solar-power" class="hover:opacity-80 transition-opacity">
+        				<div class="flex flex-col items-center text-emerald-600">
+            					<i data-lucide="sun" class="w-8 h-8 mb-2 pulsate-solar"></i>
+            					<span class="text-sm font-medium pulsate-solar">Solar Power</span>
+        				</div>
+    				</a>
+			</div>
 
                 <!-- Social Links -->
                 <div class="flex justify-center space-x-6">
-                    <a href="https://github.com/username" target="_blank" rel="noopener noreferrer">
-                        <i data-lucide="github" class="w-6 h-6 text-gray-600 hover:text-emerald-600 transition-colors"></i>
-                    </a>
                     <a href="https://linkedin.com/in/cliff-zimsen" target="_blank" rel="noopener noreferrer">
                         <i data-lucide="linkedin" class="w-6 h-6 text-gray-600 hover:text-emerald-600 transition-colors"></i>
                     </a>
@@ -99,36 +95,109 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-20 bg-white">
+	<section id="about" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4">
             <h2 class="text-3xl font-bold text-center text-gray-900 mb-8">About Me</h2>
             <p class="text-xl text-gray-600 max-w-3xl mx-auto text-center mb-12">
-                Dedicated to accelerating the transition to renewable energy through innovative solutions.
-                My focus lies in developing sustainable projects that create positive environmental impact
-                and contribute to our clean energy future.
+                I'm passionate about driving meaningful change through leadership, innovation, and sustainable solutions. 
+            With a proven track record in building high-performing teams and solving complex challenges, I thrive at 
+            the intersection of people, processes, and technology.
             </p>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-emerald-50 p-6 rounded-lg">
-                    <i data-lucide="wind" class="w-8 h-8 text-emerald-600 mb-4"></i>
-                    <h3 class="text-lg font-semibold mb-2">Wind Energy</h3>
-                    <p class="text-gray-600">Expertise in wind farm development and optimization</p>
-                </div>
-                <div class="bg-emerald-50 p-6 rounded-lg">
-                    <i data-lucide="battery-charging" class="w-8 h-8 text-emerald-600 mb-4"></i>
-                    <h3 class="text-lg font-semibold mb-2">Energy Storage</h3>
-                    <p class="text-gray-600">Advanced storage solutions and grid integration</p>
-                </div>
-                <div class="bg-emerald-50 p-6 rounded-lg">
-                    <i data-lucide="recycle" class="w-8 h-8 text-emerald-600 mb-4"></i>
-                    <h3 class="text-lg font-semibold mb-2">Sustainability</h3>
-                    <p class="text-gray-600">Environmental impact assessment and optimization</p>
-                </div>
-            </div>
-        </div>
-    </section>
+            <!-- About Section Cards -->
+		<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+   		 <a href="about.html#team-development" class="bg-emerald-50 p-6 rounded-lg hover:shadow-lg transition-shadow cursor-pointer">
+		        <i data-lucide="users" class="w-8 h-8 text-emerald-600 mb-4"></i>
+		        <h3 class="text-lg font-semibold mb-2">Team Development</h3>
+		        <ul class="text-gray-600 list-disc pl-4 space-y-2">
+ 		           <li>Developing collaborative and high-performing teams to achieve success</li>
+ 		           <li>Advocating for team well-being and fostering environments of trust and focus</li>
+ 		       </ul>
+ 		   </a>
 
-    <!-- Projects Section -->
-    <section id="projects" class="py-20 bg-gray-50">
+		    <a href="about.html#transformational-change" class="bg-emerald-50 p-6 rounded-lg hover:shadow-lg transition-shadow cursor-pointer">
+  		      <i data-lucide="sparkles" class="w-8 h-8 text-emerald-600 mb-4"></i>
+		        <h3 class="text-lg font-semibold mb-2">Transformational Change</h3>
+		        <ul class="text-gray-600 list-disc pl-4 space-y-2">
+		            <li>Improving processes, tools, and methodologies to create lasting impact</li>
+		            <li>Delivering innovative solutions for challenges across industries</li>
+		        </ul>
+		    </a>
+
+		    <a href="about.html#sustainability" class="bg-emerald-50 p-6 rounded-lg hover:shadow-lg transition-shadow cursor-pointer">
+		        <i data-lucide="recycle" class="w-8 h-8 text-emerald-600 mb-4"></i>
+		        <h3 class="text-lg font-semibold mb-2">Sustainability</h3>
+		        <ul class="text-gray-600 list-disc pl-4 space-y-2">
+ 		           <li>Driving climate-positive initiatives through renewable energy and partnerships</li>
+		            <li>Building pathways for sustainable and impactful technologies</li>
+		        </ul>
+		    </a>
+		</div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Experience Section -->
+	<section id="experience" class="py-20 bg-gray-50">
+	    <div class="max-w-7xl mx-auto px-4">
+	        <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Experience</h2>
+	        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+	            <!-- Wind Energy -->
+ 	           <a href="experience.html#wind-energy" class="group">
+ 	               <div class="bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300 p-8 text-center">
+ 	                   <div class="flex flex-col items-center space-y-4">
+ 	                       <div class="bg-sky-50 p-4 rounded-full group-hover:bg-sky-100 transition-colors">
+ 	                           <i data-lucide="wind" class="w-12 h-12 text-sky-600"></i>
+ 	                       </div>
+ 	                       <h3 class="text-xl font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors">Wind Energy</h3>
+ 	                       <p class="text-gray-600">Expertise in offshore and onshore wind energy development</p>
+ 	                   </div>
+ 	               </div>
+ 	           </a>
+
+            <!-- Waste to Resources -->
+            <a href="experience.html#waste-resources" class="group">
+                <div class="bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300 p-8 text-center">
+                    <div class="flex flex-col items-center space-y-4">
+                        <div class="bg-geen-50 p-4 rounded-full group-hover:bg-green-100 transition-colors">
+                            <i data-lucide="trash-2" class="w-12 h-12 text-green-600"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors">Waste to Resources</h3>
+                        <p class="text-gray-600">Transforming waste streams into valuable resources</p>
+                    </div>
+                </div>
+            </a>
+
+            <!-- ESS -->
+            <a href="experience.html#ess" class="group">
+                <div class="bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300 p-8 text-center">
+                    <div class="flex flex-col items-center space-y-4">
+                        <div class="bg-blue-50 p-4 rounded-full group-hover:bg-blue-100 transition-colors">
+                            <i data-lucide="battery-charging" class="w-12 h-12 text-blue-600"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors">ESS</h3>
+                        <p class="text-gray-600">Decentralised Energy Storage Solutions</p>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Solar Power -->
+            <a href="experience.html#solar-power" class="group">
+                <div class="bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300 p-8 text-center">
+                    <div class="flex flex-col items-center space-y-4">
+                        <div class="bg-yellow-50 p-4 rounded-full group-hover:bg-yellow-100 transition-colors">
+                            <i data-lucide="sun" class="w-12 h-12 text-amber-600"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors">Solar Power</h3>
+                        <p class="text-gray-600">Rooftop solar energy solutions and implementation</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+	</section>
+
+	 <!-- Projects Section -->
+    <section style="display: none" id="projects" class="py-20 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4">
             <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Featured Projects</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -173,7 +242,8 @@
             </div>
         </div>
     </section>
-
+ 
+	
     <!-- Contact Section -->
     <section id="contact" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 text-center">
@@ -183,7 +253,7 @@
             </p>
             <p class="text-lg text-gray-600">
                 Email me at 
-                <a href="mailto:email@example.com" class="text-emerald-600 hover:text-emerald-700 transition-colors">
+                <a href="mailto:c.zimsen@gmail.com" class="text-emerald-600 hover:text-emerald-700 transition-colors">
                     c.zimsen@gmail.com
                 </a>
             </p>
