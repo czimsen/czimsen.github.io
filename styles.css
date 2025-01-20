@@ -148,3 +148,118 @@ a:focus, button:focus {
         print-color-adjust: exact;
     }
 }
+
+.pulsate-wind {
+    animation: windColor 4s linear infinite;
+}
+
+.pulsate-waste {
+    animation: wasteColor 4s linear infinite;
+}
+
+.pulsate-ess {
+    animation: essColor 4s linear infinite;
+}
+
+.pulsate-solar {
+    animation: solarColor 4s linear infinite;
+}
+
+@keyframes windColor {
+    0%, 100% {
+        color: #0ea5e9; /* sky-500 */
+    }
+    50% {
+        color: #7dd3fc; /* sky-300 */
+    }
+}
+
+@keyframes wasteColor {
+    0%, 100% {
+        color: #16a34a; /* green-600 */
+    }
+    50% {
+        color: #4ade80; /* green-400 */
+    }
+}
+
+@keyframes essColor {
+    0%, 100% {
+        color: #2563eb; /* blue-600 */
+    }
+    50% {
+        color: #60a5fa; /* blue-400 */
+    }
+}
+
+@keyframes solarColor {
+    0%, 100% {
+        color: #d97706; /* amber-600 */
+    }
+    50% {
+        color: #fbbf24; /* amber-400 */
+    }
+}
+
+
+
+
+
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #e0f7fa, #f4fbf9);
+  color: #2c3e50;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin: 0;
+  color: #004d40;
+}
+
+.hero-content h2 {
+  font-size: 28px;
+  font-weight: 600;
+  margin: 10px 0;
+  color: #00796b;
+}
+
+.hero-content p {
+  font-size: 18px;
+  color: #555;
+  margin: 20px 0;
+  line-height: 1.6;
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 30px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #00796b;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #004d40;
+}
+
+
+
